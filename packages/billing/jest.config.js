@@ -17,4 +17,4 @@ module.exports = {
             setupFilesAfterEnv: ['<rootDir>/jest.setupSpec.ts'],
         },
     ],
-}
+};

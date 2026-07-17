@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsup"
+    "build": "node init && tsup"
   },
   "version": "0.0.0-development",
   "repository": {

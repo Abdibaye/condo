@@ -27,11 +27,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:deps": "turbo build --filter=@open-condo/apollo^...",
-    "build:code": "NODE_ENV=production rollup -c",
-    "build:types": "tsc --declaration --emitDeclarationOnly",
-    "build": "rimraf dist && yarn build:code && yarn build:types",
-    "dev": "rimraf dist && yarn build:deps &&(rollup -c -w & tsc --declaration --emitDeclarationOnly --watch)"
+    "build:deps": "node init && turbo build --filter=@open-condo/apollo^...",
+    "build:code": "node init && NODE_ENV=production rollup -c",
+    "build:types": "node init && tsc --declaration --emitDeclarationOnly",
+    "build": "node init && rimraf dist && yarn build:code && yarn build:types",
+    "dev": "node init && rimraf dist && yarn build:deps &&(rollup -c -w & tsc --declaration --emitDeclarationOnly --watch)"
   },
   "files": [
     "dist"

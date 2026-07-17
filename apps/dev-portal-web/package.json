@@ -2,10 +2,10 @@
   "name": "@app/dev-portal-web",
   "version": "0.0.0-development",
   "scripts": {
-    "build:deps": "turbo build --filter=@app/dev-portal-web^... --filter=!@app/dev-portal-api --filter=!@app/condo",
-    "dev": "yarn build:deps && next dev & yarn types:watch",
-    "build": "next build",
-    "start": "next start",
+    "build:deps": "node init && turbo build --filter=@app/dev-portal-web^... --filter=!@app/dev-portal-api --filter=!@app/condo",
+    "dev": "node init && yarn build:deps && next dev & yarn types:watch",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "prepare": "node bin/prepare.js",
     "maketypes": "graphql-codegen --config codegen.ts",
     "types:watch": "yarn maketypes --watch"

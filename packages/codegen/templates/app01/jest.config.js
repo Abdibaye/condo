@@ -19,4 +19,4 @@ module.exports = {
             setupFilesAfterEnv: [`${__dirname}/jest.setupSpec.js`],
         },
     ],
-}
+};

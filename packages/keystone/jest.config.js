@@ -15,4 +15,4 @@ module.exports = {
             transformIgnorePatterns: ['/node_modules/(?!(bull)/)'],
         },
     ],
-}
+};

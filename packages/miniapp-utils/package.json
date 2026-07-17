@@ -25,10 +25,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:deps": "turbo build --filter=@open-condo/miniapp-utils^...",
-    "build:code": "NODE_ENV=production rollup -c",
-    "build:types": "tsc --declaration --emitDeclarationOnly",
-    "build": "tsup",
+    "build:deps": "node init && turbo build --filter=@open-condo/miniapp-utils^...",
+    "build:code": "node init && NODE_ENV=production rollup -c",
+    "build:types": "node init && tsc --declaration --emitDeclarationOnly",
+    "build": "node init && tsup",
     "test": "jest"
   },
   "files": [

@@ -4,7 +4,6 @@ out
 .next
 .idea
 .zed
-.env
 .kmigrator
 .DS_Store
 .docker-cache-warming
@@ -48,7 +47,6 @@ ignore.*
 .kmigratorknex.schema.json
 
 .agents
-.vscode
 .windsurf
 .devin
 
@@ -73,3 +71,8 @@ backups
 
 # Prisma artifacts
 **/.prisma
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat

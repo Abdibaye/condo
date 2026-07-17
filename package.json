@@ -11,9 +11,9 @@
   ],
   "scripts": {
     "analysis": "./bin/run-semgrep.sh -a",
-    "build:packages": "turbo run build --filter='./packages/*'",
-    "build:apps": "turbo run build --filter='./apps/*' --concurrency=100%",
-    "build": "turbo run build",
+    "build:packages": "node init && turbo run build --filter='./packages/*'",
+    "build:apps": "node init && turbo run build --filter='./apps/*' --concurrency=100%",
+    "build": "node init && turbo run build",
     "lint:code": "yarn run eslint .",
     "lint:styles": "yarn run stylelint \"**/*.{less,css}\"",
     "lint:code:fix": "yarn run eslint --fix .",

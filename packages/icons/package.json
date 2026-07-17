@@ -22,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "import:figma": "find src/components -mindepth 1 -delete && ts-node bin/import/index.ts",
-    "build": "webpack --config webpack.config.js && tsc --project tsconfig.prod.json"
+    "build": "node init && webpack --config webpack.config.js && tsc --project tsconfig.prod.json"
   },
   "files": [
     "dist"

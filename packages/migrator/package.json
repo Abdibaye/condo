@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "jest"
   },
   "bin": "dist/cli.js",

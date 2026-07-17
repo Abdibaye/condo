@@ -11,7 +11,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc"
+    "build": "node init && rimraf dist && tsc"
   },
   "exports": {
     ".": {
